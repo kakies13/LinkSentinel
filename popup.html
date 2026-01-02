@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+  <title>LinkSentinel</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo">🛡️</div>
+        <h1>LinkSentinel</h1>
+      </div>
+      <!-- Toggle Switch -->
+      <label class="switch">
+        <input type="checkbox" id="toggleExtension" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <!-- Status Indicator -->
+    <div class="status-text" id="statusText">Active and Monitoring</div>
+
+    <hr class="divider">
+
+    <!-- Last Scanned Link Section -->
+    <div class="history-section">
+      <h2>LAST SCANNED LINK</h2>
+      <div id="lastScanCard" class="scan-card empty">
+        <div class="scan-icon">👻</div>
+        <div class="scan-details">
+          <div class="scan-domain">No recent history</div>
+          <div class="scan-result">Hover a link to see it here.</div>
+          <div id="trustAction" class="trust-action" style="display:none;">
+            <button id="trustBtn" class="btn-trust">Trust this site</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Privacy First. Runs Offline.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

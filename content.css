@@ -1,0 +1,99 @@
+/* content.css */
+
+#link-sentinel-tooltip-container {
+  all: initial;
+  /* Reset inherited styles */
+  position: absolute;
+  z-index: 2147483647;
+  display: block;
+  width: 260px;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  pointer-events: none;
+  background: #ffffff;
+  color: #1f2937;
+
+  /* Modern Shadow & Border */
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+  /* Subtle border ring */
+
+  /* Transition State Defaults */
+  opacity: 0;
+  transform: translateY(4px) scale(0.98);
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#link-sentinel-tooltip-container p,
+#link-sentinel-tooltip-container div,
+#link-sentinel-tooltip-container span {
+  font-family: inherit;
+  /* Ensure reset works */
+}
+
+/* --- Type & Layout --- */
+
+#link-sentinel-tooltip-container .ls-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+#link-sentinel-tooltip-container .ls-title {
+  font-size: 10px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#link-sentinel-tooltip-container .ls-status {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+#link-sentinel-tooltip-container .ls-text {
+  font-size: 13px;
+  color: #4b5563;
+  /* Neutral gray text that is readable but calm */
+  font-weight: 400;
+}
+
+/* --- Risk Levels (High Contrast & Trust) --- */
+
+/* SAFE */
+#link-sentinel-tooltip-container.ls-safe {
+  border-left: 4px solid #10b981;
+}
+
+#link-sentinel-tooltip-container.ls-safe .ls-status {
+  color: #059669;
+}
+
+/* SUSPICIOUS */
+#link-sentinel-tooltip-container.ls-suspicious {
+  border-left: 4px solid #f59e0b;
+}
+
+#link-sentinel-tooltip-container.ls-suspicious .ls-status {
+  color: #d97706;
+}
+
+/* DANGEROUS */
+#link-sentinel-tooltip-container.ls-dangerous {
+  border-left: 4px solid #ef4444;
+}
+
+#link-sentinel-tooltip-container.ls-dangerous .ls-status {
+  color: #dc2626;
+}

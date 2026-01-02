@@ -1,0 +1,11 @@
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# vscode
+.vscode/
+
+# Artifacts
+LinkSentinel.zip
+*.crx
