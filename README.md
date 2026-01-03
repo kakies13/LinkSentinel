@@ -2,7 +2,11 @@
 
 **LinkSentinel** is a privacy-focused, real-time link analysis Chrome Extension. It helps users avoid phishing, typosquatting (e.g., `goggle.com`), and dangerous downloads by scanning links instantly **offline** before they are clicked.
 
+
 ![LinkSentinel Preview](website/logo.png)
+
+### 🌐 [Visit Official Website & Live Demo](https://link-sentinel.vercel.app/)
+
 
 ## 🚀 Features
 
