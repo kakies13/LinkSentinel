@@ -17,9 +17,13 @@
 *   **✅ Custom Whitelist:** Users can mark trusted sites to bypass checks.
 *   **🎨 Premium UI:** Glassmorphism design with a focus on trust and clarity.
 
-## 📦 Installation (Developer Mode)
+## 📦 Installation
 
-Since this extension is in **Beta**, you can install it manually:
+### Option 1: Chrome Web Store (Recommended)
+[**Download LinkSentinel from Chrome Web Store**](https://chromewebstore.google.com/detail/loaimndihjehbcpjoclpblgglhhkangm?utm_source=item-share-cb)
+
+### Option 2: Developer Mode (Manual)
+Since this extension is in **Beta**, you can also install it manually:
 
 1.  Download or Clone this repository.
 2.  Open Chrome and navigate to `chrome://extensions`.
